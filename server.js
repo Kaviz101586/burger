@@ -1,6 +1,6 @@
 var express = require("express");
 
-var PORT = process.env.PORT || 8080;
+var port = process.env.port || 8080;
 
 var app = express();
 
@@ -19,7 +19,7 @@ var routes = require("./controllers/burger_controllers.js");
 
 app.use(routes);
 
-app.listen(PORT, function() {
+app.listen(port, function() {
 
   console.log("Server listening on: http://localhost:" + PORT);
 });
